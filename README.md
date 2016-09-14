@@ -11,5 +11,7 @@ bower i
 grunt
 ```
 
+Project needs Ruby for SCSS and node.js for Grunt.
+
 #### And go to
 > http://localhost:9000
