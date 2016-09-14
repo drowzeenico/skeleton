@@ -10,7 +10,7 @@ define([
       new LayoutView().render()
 
     light: ()->
-      console.log 'lights on!'
+      console.log 'lights on! here'
 
   return Controller;
 )
