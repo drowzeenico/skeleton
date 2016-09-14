@@ -1,6 +1,6 @@
 # Skeleton
 
-My first project with Backbone.js, Require.js, Grunt, Bower, SCSS and Skeleton Framework.
+My first project with Backbone.js, Require.js, Grunt, Bower, SCSS and Skeleton CSS Framework.
 
 ##### How to install:
 
