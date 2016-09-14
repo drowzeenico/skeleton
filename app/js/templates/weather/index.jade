@@ -1,0 +1,9 @@
+div.widget.weather
+	div.row
+		div.two.columns
+			each place in locations
+				= place.city
+				= place.country 
+				= place.temperature 
+				br
+				br

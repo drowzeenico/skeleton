@@ -1,0 +1,35 @@
+@import 'vars';
+@import 'mixins';
+
+@import 'menu';
+
+body, html {
+  height: 100%;
+}
+
+.workspace {
+
+	.header {
+		text-indent: 15%;
+		background: #9b4c97;
+		height: 75px;
+		padding-top:25px;
+		color: white;
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+
+		.navigation {
+			margin-top:25px;
+			padding-top: 10px;
+			background: #c487c1;
+			height: 40px;
+		}
+	}
+
+	.dashboard {
+		margin-top: 40px;
+		margin-left: 14%;
+	}
+}
+	

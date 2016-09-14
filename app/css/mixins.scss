@@ -1,0 +1,9 @@
+/* Выравниваем по высоте */
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

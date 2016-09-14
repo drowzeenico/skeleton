@@ -1,0 +1,35 @@
+.menu {
+	position: absolute;
+	height: 100%;
+	background: #222d32;
+
+	a {
+		display: block;
+		width: 100%;
+		height: (100% / $menuItemCount);
+		border-top: 1px solid #ccc;
+		text-decoration: none;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 0px;
+		margin: 0px;
+		color: #fff;
+
+		span {
+			position: relative;
+			top: 70px;
+		}
+	}
+
+	@each $item, $image in $menuItems {
+		a.#{$item} {
+			background: url(/img/menu/#{$image}) center 15px no-repeat;
+			background-size: 30%;
+			@if $item == 'security' { border: none; }
+
+			&:hover {
+				background-color: #33454d;
+			}
+		}
+  }
+}
