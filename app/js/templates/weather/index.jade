@@ -1,9 +1,10 @@
 div.widget.weather
 	div.row
-		div.two.columns
-			each place in locations
-				= place.city
-				= place.country 
-				= place.temperature 
-				br
-				br
+		each place in locations
+			div.two.columns.city
+				div.one-third.column.country
+					= place.country
+				div.two-thirds.column.info
+					h3
+						|#{place.temperature}&deg;C
+					= place.city

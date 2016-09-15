@@ -11,7 +11,12 @@ define([
   ];
 
   return Backbone.View.extend ({
+    className: '.widget.weather',
     collection: new LocationsCollection(cities),
+
+    initialize: ()->
+      this.collection.on('change', this.render, this);
+      return
 
     getData: ()->
       data =
@@ -20,6 +25,11 @@ define([
 
 
     render: ()->
-      JST['weather/index'] this.getData()
+      html = JST['weather/index'] this.getData();
+      this.$el = $(this.className);
+      if(this.$el.length > 0)
+        this.$el.replaceWith html
+
+      html
   });
 );

@@ -1,7 +1,7 @@
-@import 'vars';
 @import 'mixins';
 
 @import 'menu';
+@import 'weather';
 
 body, html {
   height: 100%;
@@ -30,6 +30,22 @@ body, html {
 	.dashboard {
 		margin-top: 40px;
 		margin-left: 14%;
+
+		.widget {
+			padding: 10px;
+			border-bottom: 1px solid #ccc;
+		}
 	}
 }
-	
+
+@media (min-width: 200px) {
+	.workspace .dashboard {margin-left: 30%;}
+}
+
+@media (min-width: 400px) {
+	.workspace .dashboard {margin-left: 40%;}
+}
+
+@media (min-width: 450px) {
+	.workspace .dashboard {margin-left: 14%;}
+}

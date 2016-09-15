@@ -1,0 +1,26 @@
+.weather {
+
+	.city {
+		border: 1px solid #ccc;
+		background: #eaeaea;
+		border-radius: 2px;
+		width: 150px;
+
+		.country {
+			background: #0080ff;
+			color: #fff;
+			padding-top: 35px;
+			padding-left: 5px;
+			height: 90px;
+			font-weight: bold;
+		}
+	}
+}
+
+@media (min-width: 100px) {
+	.weather .city {width: 50px;}
+}
+
+@media (min-width: 400px) {
+	.weather .city {width: 150px;}
+}
