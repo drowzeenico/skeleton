@@ -1,0 +1,9 @@
+div.widget.devices
+  div.row
+    each dev in devices
+      div.two.columns.device
+        = dev.name
+        br
+        img(src='/img/devices/' + dev.image + '.svg')
+        br
+        = dev.status

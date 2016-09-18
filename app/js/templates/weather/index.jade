@@ -1,10 +1,25 @@
 div.widget.weather
-	div.row
-		each place in locations
-			div.two.columns.city
-				div.one-third.column.country
-					= place.country
-				div.two-thirds.column.info
-					h3
-						|#{place.temperature}&deg;C
-					= place.city
+  div.row
+    a(href="#scenarios")
+      div.one-third.column.block.scenarios
+        div.row
+          div.one-third.column.label
+            h5 Scenarios
+          div.two-thirds.column.list
+            b My Scenario
+            p.time Через 10 минут
+
+    a(href="#weather")
+      div.two-thirds.column.block.locations
+        div.row
+          div.three.columns.label
+            h5 Weather
+          div.nine.columns.list
+            each place in locations
+              div.city.row
+                div.one-third.column.country
+                  = place.country
+                div.two-thirds.column.info
+                  h3
+                    |#{place.temperature}&deg;C
+                  = place.city

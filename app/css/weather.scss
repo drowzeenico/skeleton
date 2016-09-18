@@ -1,26 +1,49 @@
 .weather {
 
-	.city {
-		border: 1px solid #ccc;
-		background: #eaeaea;
-		border-radius: 2px;
-		width: 150px;
+  .block {
+    background: #fff;
+    margin-right: 10px;
+    border-radius: 3px;
+    padding: 20px 0px 0px 10px;
 
-		.country {
-			background: #0080ff;
-			color: #fff;
-			padding-top: 35px;
-			padding-left: 5px;
-			height: 90px;
-			font-weight: bold;
-		}
-	}
-}
+    &:hover {
+      background: #ccc;
+    }
 
-@media (min-width: 100px) {
-	.weather .city {width: 50px;}
-}
+    .label {
+      border-right: 1px solid #ccc;
+      display: inline-block;
+      position: relative;
+    }
 
-@media (min-width: 400px) {
-	.weather .city {width: 150px;}
+    .list {
+      display: inline-block;
+
+      p.time {
+        color: #999;
+      }
+    }
+  }
+
+  .locations {
+    width: 55%;
+
+    .city {
+      border: 1px solid #ccc;
+      background: #eaeaea;
+      border-radius: 2px;
+      width: 130px;
+      display: inline-block;
+      margin-right: 10px;
+
+      .country {
+        background: #0080ff;
+        color: #fff;
+        padding-top: 35px;
+        padding-left: 5px;
+        font-weight: bold;
+      }
+    }  
+  }
+	
 }
